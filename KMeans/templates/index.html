@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <h1>KMeans clustering algorithm</h1>
+
+    <form action="/cluster" method="post">
+        <label for="url_get">Enter dataset URL:</label>
+        <input type="text" id="url_get" name="url_get" required>
+        
+        <label for="k">Enter number of clusters (k):</label>
+        <input type="number" id="k" name="k">
+        
+        <label for="tol">Enter tol:</label>
+        <input type="number" id="tol" name="tol">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
